@@ -1,0 +1,79 @@
+{
+  "env_id": "CarRacing-v3",
+  "continuous": false,
+  "num_samples": 5000,
+  "image_shape": [
+    5000,
+    96,
+    96,
+    3
+  ],
+  "label_shape": [
+    5000,
+    5
+  ],
+  "label_encoding": "one_hot",
+  "action_mapping": {
+    "0": "do_nothing",
+    "1": "steer_right",
+    "2": "steer_left",
+    "3": "accelerate",
+    "4": "brake"
+  },
+  "action_keys": {
+    "0": "no key",
+    "1": "D",
+    "2": "A",
+    "3": "W",
+    "4": "S"
+  },
+  "action_order": [
+    1,
+    2,
+    3,
+    4,
+    0
+  ],
+  "target_per_action": 1000,
+  "action_counts": {
+    "0": 1000,
+    "1": 1000,
+    "2": 1000,
+    "3": 1000,
+    "4": 1000
+  },
+  "episode_lengths": [
+    107,
+    96,
+    103,
+    103,
+    91,
+    132,
+    103,
+    111,
+    87,
+    140,
+    170,
+    182,
+    185,
+    149,
+    159,
+    152,
+    377,
+    395,
+    209,
+    78,
+    80,
+    68,
+    82,
+    56,
+    74,
+    118,
+    176,
+    213,
+    531,
+    473
+  ],
+  "recording_toggle_key": "SPACE",
+  "collection_mode": "sequential_actions_manual"
+}
